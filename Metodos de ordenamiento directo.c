@@ -1,6 +1,6 @@
 /*
-Nombre: Adrik de la Cruz Martínez			Matrícula: 1863369				Grupo: 006
-*/
+ * Nombre: Adrik de la Cruz Martínez			Matrícula: 1863369				Grupo: 006
+ */
 
 #include<windows.h>
 #include<stdio.h>

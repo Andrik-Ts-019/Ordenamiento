@@ -55,7 +55,7 @@ void ordenar_burbuja(int *p, int modo)
 	{
 		for(i=0;i<N;i++)
 		{
-			for(j=i;j<N;j++)
+			for(j=i+1;j<N;j++)
 			{
 				if(*(p+i)>*(p+j))		// Forma de ordenar
 				{
@@ -70,9 +70,9 @@ void ordenar_burbuja(int *p, int modo)
 	{
 		for(i=0;i<N;i++)
 		{
-			for(j=i;j<N;j++)
+			for(j=i+1;j<N;j++)
 			{
-				if(*(p+i)<=*(p+j))		// Forma de ordenar
+				if(*(p+i)<*(p+j))		// Forma de ordenar
 				{
 					tmp=*(p+i);
 					*(p+i)=*(p+j);
@@ -88,9 +88,9 @@ int main()
 {
 	int vec[N];
 	
-	generar_datos(&vec[0], DESC);
+	generar_datos(&vec[0], ASC);
 	
-	ordenar_burbuja(&vec[0], ASC);
+	ordenar_burbuja(&vec[0], DESC);
 	
 	imprimir(&vec[0]);
 	

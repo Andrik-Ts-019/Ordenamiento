@@ -50,7 +50,7 @@ void ordenar_shell(int *p, int mod)
 	
 	if(mod==0)							// Ordenar de forma descendente
 	{
-		while(intervalo>=1)
+		while(intervalo>0)
 		{
 			for(i=intervalo;i<N;i++)
 			{
@@ -77,7 +77,7 @@ void ordenar_shell(int *p, int mod)
 	
 	if(mod==1)							// Ordenar de forma ascendente
 	{
-		while(intervalo>=1){
+		while(intervalo>0){
 			for(i=intervalo;i<N;i++){
 				j=i-intervalo;
 				while(j>=0){

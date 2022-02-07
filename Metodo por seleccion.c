@@ -67,7 +67,7 @@ void ord_seleccion(int *p, int modo)
 			maximo=i;
 			for(j=i+1;j<N;j++)
 			{
-				if(*(p+j)>=*(p+maximo))	// Determinación de orden
+				if(*(p+j)>*(p+maximo))	// Determinación de orden
 				{
 					maximo=j;
 				}
